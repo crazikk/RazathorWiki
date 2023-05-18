@@ -1,0 +1,122 @@
+/* Reset some default browser styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #1a1a1a;
+    color: #f8f9fa;
+}
+
+/* Style the header */
+header {
+    background-color: transparent;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 1px solid #dee2e6;
+}
+
+header h1 {
+    color: #f8f9fa;
+}
+
+header #logo {
+    height: 95px;
+    width: 220px;
+}
+
+/* Style the container */
+#container {
+    display: flex;
+}
+
+/* Style the navigation */
+nav {
+    background-color: transparent;
+    padding: 20px;
+    width: 200px;
+    height: calc(100vh - 160px);
+    overflow-y: scroll; /* Enable vertical scrolling */
+    scrollbar-width: thin; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+    position: relative; /* Add a position property */
+}
+
+nav::-webkit-scrollbar {
+    width: 0; /* Hide the scrollbar in Webkit browsers */
+}
+
+nav ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-right: -15px; /* Add a negative margin to offset the scrollbar space */
+    padding-right: 15px; /* Add right padding to compensate for the negative margin */
+}
+
+nav ul li {
+    margin-bottom: 10px;
+    cursor: pointer; /* Change the cursor style */
+}
+
+nav ul li a {
+    color: #f8f9fa;
+    text-decoration: none;
+}
+
+/* Style the category headings */
+nav ul > li > a {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Style the subcategories */
+nav ul ul li a {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+/* Style the main content */
+main {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+main h2, main h3 {
+    color: #f8f9fa;
+    margin-bottom: 10px;
+}
+
+main p {
+    color: #f8f9fa;
+    margin-left: 20px;
+}
+
+/* Style the footer */
+footer {
+    background-color: transparent;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+}
+
+/* Style the categories */
+#mapy,
+#vybaveni,
+#ostatni {
+    padding-top: 20px;
+    border-top: 1px solid #dee2e6;
+    margin-top: 20px;
+}
+
+#mapy h2,
+#vybaveni h2,
+#ostatni h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}

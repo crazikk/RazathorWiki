@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapy - Razathor</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="mapy.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="../logo.png" alt="Logo serveru" id="logo" onclick="goToMainPage()">
+        <h1>Mapy</h1>
+    </header>
+
+    <div id="container">
+        <nav>
+            <ul>
+                <li><a onclick="toggleSubcategory('mapy')">Mapy</a>
+                    <ul id="mapy" style="display: none;">
+                        <li><a onclick="openPage('mapy')">Mapy</a></li>
+                        <li><a onclick="openPage('dungeony')">Dungeony</a></li>
+                    </ul>
+                </li>
+                <li><a onclick="toggleSubcategory('vybaveni')">Vybavení</a>
+                    <ul id="vybaveni" style="display: none;">
+                        <li><a onclick="openPage('zbrane')">Zbraně</a></li>
+                        <li><a onclick="openPage('brneni')">Brnění</a></li>
+                        <li><a onclick="openPage('sperky')">Šperky</a></li>
+                    </ul>
+                </li>
+                <li><a onclick="toggleSubcategory('ostatni')">Ostatní</a>
+                    <ul id="ostatni" style="display: none;">
+                        <li><a onclick="openPage('pasivniSchopnosti')">Pasivní schopnosti</a></li>
+                        <li><a onclick="openPage('jezdectvi')">Jezdectví</a></li>
+                        <li><a onclick="openPage('pet')">Pet</a></li>
+                        <li><a onclick="openPage('kameny')">Kameny</a></li>
+                        <li><a onclick="openPage('spotrebniDoplneky')">Spotřební doplňky</a></li>
+                        <li><a onclick="openPage('serpy')">Šerpy</a></li>
+                        <li><a onclick="openPage('rukavice')">Rukavice</a></li>
+                        <li><a onclick="openPage('tezba')">Těžba</a></li>
+                        <li><a onclick="openPage('rybareni')">Rybaření</a></li>
+                        <li><a onclick="openPage('biolog')">Biolog</a></li>
+                        <li><a onclick="openPage('vyzvy')">Výzvy</a></li>
+                        <li><a onclick="openPage('bonusy')">Bonusy</a></li>
+                        <li><a onclick="openPage('slechteni')">Šlechtění</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <main id="content">
+            <div class="location">
+                <span class="location-name">Začátečnické mapy</span>
+            </div>
+
+            <div class="center-image">
+                <img src="items/yayang.jpg" alt="Center Image">
+            </div>
+
+            <div class="falling-items">
+                <p>Co zde padá:</p>
+                <img src="items/pergac.png" alt="Falling Item 1">
+                <img src="items/zelenekouzlo.png" alt="Falling Item 2">
+                <img src="items/ruda.png" alt="Falling Item 3">
+            </div>
+
+            <div class="separator"></div>
+
+            <div class="location">
+                <span class="location-name">Údolí orků</span>
+            </div>
+            <div class="center-image">
+                <img src="items/orci.png" alt="Center Image 2">
+            </div>
+
+            <div class="falling-items">
+                <p>Co zde padá:</p>
+                <img src="items/zuborka.png" alt="Falling Item 4">
+                <img src="items/zacarko.png" alt="Falling Item 4">
+                <img src="items/dusak.png" alt="Falling Item 4">
+
+            </div>
+
+            <div class="separator"></div>
+
+            <div class="location">
+                <span class="location-name">Červený les</span>
+            </div>
+
+            <div class="center-image">
+                <img src="items/les.png" alt="Center Image">
+            </div>
+
+            <div class="falling-items">
+                <p>Co zde padá:</p>
+                <img src="items/cervenyelik.png" alt="Falling Item 1">
+                <img src="items/modryelik.png" alt="Falling Item 2">
+                <img src="items/expak.png" alt="Falling Item 3">
+                <img src="items/zlodejky.png" alt="Falling Item 3">
+                <img src="items/zacarko.png" alt="Falling Item 4">
+                <img src="items/dusak.png" alt="Falling Item 4">
+                <img src="items/bsko.png" alt="Falling Item 4">
+            </div>
+
+            <div class="separator"></div>
+
+
+
+
+
+
+        </main>
+    </div>
+
+    
+</body>
+
+</html>

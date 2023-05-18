@@ -1,0 +1,73 @@
+/* Reset some default browser styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+main {
+    text-align: center;
+    flex-grow: 1;
+}
+
+footer {
+    background-color: transparent;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+/* Additional Styles for Mapy.html */
+.location {
+    text-align: center;
+    margin-top: 20px;
+    color: #f8f9fa;
+    font-size: 24px;
+}
+
+.location-name {
+    font-weight: bold;
+}
+
+.center-image {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.center-image img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.falling-items {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.falling-items p {
+    font-size: 16px;
+}
+
+.falling-items img {
+    display: inline-block;
+    margin: 5px;
+    max-width: 50px;
+    height: auto;
+}
+
+.separator {
+    border-top: 1px solid #dee2e6;
+    margin-top: 20px;
+}
