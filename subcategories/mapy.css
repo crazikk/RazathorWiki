@@ -1,4 +1,15 @@
-/* Reset some default browser styles */
+header {
+    margin-bottom: 20px;
+    text-align: center;
+    margin-left: 230px; /* Přidáváme margin-left pro posunutí záhlaví do prava */
+}
+
+.location-name {
+    font-weight: bold;
+    
+}
+
+/* Předchozí stylová pravidla */
 body, h1, h2, p {
     margin: 0;
     padding: 0;
@@ -7,10 +18,6 @@ body, h1, h2, p {
 body {
     display: flex;
     flex-direction: column;
-}
-
-header {
-    margin-bottom: 20px;
 }
 
 main {
@@ -27,16 +34,13 @@ footer {
     bottom: 0;
     width: 100%;
 }
-/* Additional Styles for Mapy.html */
+
+/* Ostatní styly */
 .location {
     text-align: center;
     margin-top: 20px;
     color: #f8f9fa;
     font-size: 24px;
-}
-
-.location-name {
-    font-weight: bold;
 }
 
 .center-image {
