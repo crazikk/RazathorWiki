@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rybaření - Razathor</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="bio.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="../logo.png" alt="Logo serveru" id="logo" onclick="goToMainPage()">
+        <h1>Biologické úkoly</h1>
+    </header>
+
+    <div id="container">
+        <nav>
+            <ul>
+                <li><a onclick="toggleSubcategory('mapy')">Mapy</a>
+                    <ul id="mapy" style="display: none;">
+                        <li><a onclick="openPage('mapy')">Mapy</a></li>
+                        <li><a onclick="openPage('dungeony')">Dungeony</a></li>
+                    </ul>
+                </li>
+                <li><a onclick="toggleSubcategory('vybaveni')">Vybavení</a>
+                    <ul id="vybaveni" style="display: none;">
+                        <li><a onclick="openPage('zbrane')">Zbraně</a></li>
+                        <li><a onclick="openPage('brneni')">Brnění</a></li>
+                        <li><a onclick="openPage('sperky')">Šperky</a></li>
+                    </ul>
+                </li>
+                <li><a onclick="toggleSubcategory('ostatni')">Ostatní</a>
+                    <ul id="ostatni" style="display: none;">
+                        <li><a onclick="openPage('pasivniSchopnosti')">Pasivní schopnosti</a></li>
+                        <li><a onclick="openPage('jezdectvi')">Jezdectví</a></li>
+                        <li><a onclick="openPage('pet')">Pet</a></li>
+                        <li><a onclick="openPage('rukavice')">Rukavice</a></li>
+                        <li><a onclick="openPage('tezba')">Těžba</a></li>
+                        <li><a onclick="openPage('rybareni')">Rybaření</a></li>
+                        <li><a onclick="openPage('biolog')">Biolog</a></li>
+                        <li><a onclick="openPage('vyzvy')">Výzvy</a></li>
+                        <li><a onclick="openPage('bonusy')">Bonusy</a></li>
+                        <li><a onclick="openPage('slechteni')">Šlechtění</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <main id="content">
+            <div class="location">
+                <span class="location-name">Biologické úkoly</span>
+            </div>
+
+            <div class="text-info">
+                <p>Jak je již zvykem pro každého hráče, na serveru jsou přináší <span class="highlight">Biologické výzkumy</span>, za které si zasloužíte odměnu ve formě<span class="highlight"> trvalého bonusu</span>.</p>
+                <p>Pro odevzdávání předmětů biologovi je vyvinut zcela nový <span class="highlight">systém</span>. V rámci hry můžete navíc získat několik druhů Výzkumníkova <span class="highlight">elixíru</span> a Lektvaru <span class="highlight">času</span>.</p>
+              </div>
+              <div class="separator"></div>
+              
+              <table class="bio-table">
+                <thead>
+                    <tr>
+                        <th>Výzkum</th>
+                        <th>Od levelu</th>
+                        <th>Předmět výzkumu</th>
+                        <th>Počet</th>
+                        <th>Čekací doba</th>
+                        <th>Závěrečný kámen</th>
+                        <th>Trvalá odměna</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td># 1</td>
+                        <td>Lv. 30</td>
+                        <td><img src="items/zuborka.png" title="Zub orka"></td>
+                        <td>10x</td>
+                        <td>30 min.</td>
+                        <td><img src="items/Kámen_duší_Jinunggisů.png" title="Kámen duší Jinunggisů"></td>
+                        <td>Rychlost pohybu +10%</td>
+                    </tr>
+                    <tr>
+                        <td># 2</td>
+                        <td>Lv. 40</td>
+                        <td><img src="items/Kniha_klateb.png" title="Kniha klateb"></td>
+                        <td>15x</td>
+                        <td>1 hod.</td>
+                        <td><img src="items/Kámen_duše_chrámu.png" title="Kámen duše chrámu"></td>
+                        <td>Max. ZB +550</td>
+                    </tr>
+                    <tr>
+                        <td># 3</td>
+                        <td>Lv. 50</td>
+                        <td><img src="items/upominka.png" title="Upomínka na démona"></td>
+                        <td>15x</td>
+                        <td>2 hod.</td>
+                        <td><img src="items/Kámen_duše_Sagysů.png" title="Kámen duše Sagysů"></td>
+                        <td>Obrana +60</td>
+                    </tr>
+                    <tr>
+                        <td># 4</td>
+                        <td>Lv. 60</td>
+                        <td><img src="items/ledovakulicka.png" title="Ledová kulička"></td>
+                        <td>20x</td>
+                        <td>3 hod.</td>
+                        <td><img src="items/Kámen_duše_Aurtumryusů.png" title="Kámen duše Aurtumryusů"></td>
+                        <td>Hodnota útoku +50</td>
+                    </tr>
+                    <tr>
+                        <td># 6</td>
+                        <td>Lv. 70</td>
+                        <td><img src="items/Zelkova_větev.png" title="Zelkova větev"></td>
+                        <td>25x</td>
+                        <td>4 hod.</td>
+                        <td><img src="items/Kámen_duše_Gyimoksů.png" title="Kámen duše Gyimoksů"></td>
+                        <td>Silný proti příšerám +8%</td>
+                    </tr>
+                    <tr>
+                        <td># 7</td>
+                        <td>Lv. 80</td>
+                        <td><img src="items/strategie.png" title="Strategie protiútoku"></td>
+                        <td>40x</td>
+                        <td>6 hod.</td>
+                        <td><img src="items/Kámen_duše_Tugyisů.png" title="Kámen duše jeskyně"></td>
+                        <td>Silný proti kamenům +10%</td>
+                    </tr>
+                    <tr>
+                        <td># 8</td>
+                        <td>Lv. 90</td>
+                        <td><img src="items/Krvavá_květina.png" title="Krvavá květina"></td>
+                        <td>50x</td>
+                        <td>8 hod.</td>
+                        <td><img src="items/Kámen_duše_Aurtumryusů.png" title="Kámen duše přírody"></td>
+                        <td>Max. ZB +1500</td>
+                    </tr>
+                    <tr>
+                        <td># 9</td>
+                        <td>Lv. 100</td>
+                        <td><img src="items/pisek.png" title="Písek"></td>
+                        <td>55x</td>
+                        <td>10 hod.</td>
+                        <td><img src="items/Kámen_duše_Gyimoksů.png" title="Kámen duše pouště"></td>
+                        <td>Silný proti bossům +10%</td>
+                    </tr>
+                    <tr>
+                        <td># 10</td>
+                        <td>Lv. 110</td>
+                        <td><img src="items/lavovykamen.png" title="Lávový kámen"></td>
+                        <td>60x</td>
+                        <td>12 hod.</td>
+                        <td><img src="items/Kámen_duše_Tugyisů.png" title="Kámen duše pekla"></td>
+                        <td>Silný proti pololidem +10%</td>
+                    </tr>
+
+                </tbody>
+            </table>
+           
+
+
+
+
+
+              
+
+
+
+
+            
+        </main>
+    </div>
+</body>
+
+</html>

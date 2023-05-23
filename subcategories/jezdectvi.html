@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jezdectví - Razathor</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="mapy.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="../logo.png" alt="Logo serveru" id="logo" onclick="goToMainPage()">
+        <h1>Jezdectví</h1>
+    </header>
+
+    <div id="container">
+        <nav>
+            <ul>
+                <li><a onclick="toggleSubcategory('mapy')">Mapy</a>
+                    <ul id="mapy" style="display: none;">
+                        <li><a onclick="openPage('mapy')">Mapy</a></li>
+                        <li><a onclick="openPage('dungeony')">Dungeony</a></li>
+                    </ul>
+                </li>
+                <li><a onclick="toggleSubcategory('vybaveni')">Vybavení</a>
+                    <ul id="vybaveni" style="display: none;">
+                        <li><a onclick="openPage('zbrane')">Zbraně</a></li>
+                        <li><a onclick="openPage('brneni')">Brnění</a></li>
+                        <li><a onclick="openPage('sperky')">Šperky</a></li>
+                    </ul>
+                </li>
+                <li><a onclick="toggleSubcategory('ostatni')">Ostatní</a>
+                    <ul id="ostatni" style="display: none;">
+                        <li><a onclick="openPage('pasivniSchopnosti')">Pasivní schopnosti</a></li>
+                        <li><a onclick="openPage('jezdectvi')">Jezdectví</a></li>
+                        <li><a onclick="openPage('pet')">Pet</a></li>
+                        <li><a onclick="openPage('rukavice')">Rukavice</a></li>
+                        <li><a onclick="openPage('tezba')">Těžba</a></li>
+                        <li><a onclick="openPage('rybareni')">Rybaření</a></li>
+                        <li><a onclick="openPage('biolog')">Biolog</a></li>
+                        <li><a onclick="openPage('vyzvy')">Výzvy</a></li>
+                        <li><a onclick="openPage('bonusy')">Bonusy</a></li>
+                        <li><a onclick="openPage('slechteni')">Šlechtění</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <main id="content">
+            <div class="location">
+                <span class="location-name">Jezdectví</span>
+            </div>
+
+            <div class="text-info">
+                <p>Na serveru nejsou žádní mounti. Místo toho každý hráč na začátku hry obdrží <span class="highlight">Obrázek koně</span> na úrovni 1.</p>
+                <p>Když nasednete na svého koně a začnete zabíjet příšery, automaticky získává váš kůň zkušenostní body.Na serveru můžete bojovat na koni již od <span class="highlight">úrovně 1</span>!</p>
+                <p>Postup na další úroveň můžete sledovat přímo v popisu pečeti a zvyšuje se při zabíjení příšer z koně. Musíte však zabíjet příšery podobné vašemu levelu.</p>
+                <p>Jakmile vylepšíte pečeť na poslední úroveň aktuálního stupně, pečeť vás vyzve, abyste navštívili <span class="highlight">Pacholka</span> ve městě. Po přesunu pečeti na Pacholka dostanete možnost trénovat koně na další úroveň. Šance na trénování koně je vždy <span class="highlight">100%</span> a musíte zaplatit určitý počet <span class="highlight">yangů a koňských medailí</span> podle vašeho aktuálního stupně.</p>
+                <p>Můžete také do každé pečeti přidat až <span class="highlight">5 bonusů</span>, které můžete náhodně měnit, stejně jako u vybavení. K přidání a změně těchto bonusů slouží předměty <span class="highlight">Začarovat pečeť,Zesílit pečeť</span>.</p>
+                <p>Aby toho nebylo málo, vaše pečeť bude zaznamenávat počet zničených Kamenů a postupně se zvyšovat bonus <span class="highlight">Silný proti Kamenům</span>.</p>
+                <p>U pacholka je možnost <span class="highlight">kouzlení na koni</span>, stojí to <span class="highlight">50</span> koňských medailí a zvýší to váš damage přiblizně o </span><span class="highlight">1000</span>.</p>
+              </div>
+              <div class="separator"></div>
+              <div class="text-info">
+                <div class="jezdectvi">
+                  <img src="items/kun1.png" alt="Obrázek 1">
+                  <p><span class="highlights"> Stupeň vývoje koně 1 </p>
+                </div>
+                <div class="text-info">
+                    <div class="jezdectvi">
+                      <img src="items/kun2.png" alt="Obrázek 1">
+                      <p><span class="highlights"> Stupeň vývoje koně 2 </p>
+                    </div>
+                    <div class="text-info">
+                        <div class="jezdectvi">
+                          <img src="items/kun3.png" alt="Obrázek 1">
+                          <p><span class="highlights"> Stupeň vývoje koně 3 </p>
+                        </div>
+                        <div class="text-info">
+                            <div class="jezdectvi">
+                              <img src="items/kun4.png" alt="Obrázek 1">
+                              <p><span class="highlights"> Stupeň vývoje koně 4 </p>
+                            </div>
+                            <div class="text-info">
+                                <div class="jezdectvi">
+                                  <img src="items/kun5.png" alt="Obrázek 1">
+                                  <p><span class="highlights"> Stupeň vývoje koně 5 </p>
+                                </div>
+                                <div class="text-info">
+                                    <div class="jezdectvi">
+                                      <img src="items/kun6.png" alt="Obrázek 1">
+                                      <p><span class="highlights"> Stupeň vývoje koně 6 </p>
+                                    </div>
+                                    <div class="text-info">
+                                        <div class="jezdectvi">
+                                          <img src="items/kun7.png" alt="Obrázek 1">
+                                          <p><span class="highlights"> Stupeň vývoje koně 7 </p>
+                                        </div>
+                                        <div class="text-info">
+                                            <div class="jezdectvi">
+                                              <img src="items/kun8.png" alt="Obrázek 1">
+                                              <p><span class="highlights"> Stupeň vývoje koně 8 </p>
+                                            </div>
+                                            <div class="text-info">
+                                                <div class="jezdectvi">
+                                                  <img src="items/kun9.png" alt="Obrázek 1">
+                                                  <p><span class="highlights"> Stupeň vývoje koně 9 </p>
+                                                </div>
+                                                <div class="text-info">
+                                                    <div class="jezdectvi">
+                                                      <img src="items/kun10.png" alt="Obrázek 1">
+                                                      <p><span class="highlights"> Stupeň vývoje koně na maximální úrovni </p>
+                                                    </div>
+
+              
+
+
+
+
+            
+        </main>
+    </div>
+</body>
+
+</html>

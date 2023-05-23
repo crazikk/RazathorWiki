@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rukavice - Razathor</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="mapy.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="../logo.png" alt="Logo serveru" id="logo" onclick="goToMainPage()">
+        <h1>Rukavice</h1>
+    </header>
+
+    <div id="container">
+        <nav>
+            <ul>
+                <li><a onclick="toggleSubcategory('mapy')">Mapy</a>
+                    <ul id="mapy" style="display: none;">
+                        <li><a onclick="openPage('mapy')">Mapy</a></li>
+                        <li><a onclick="openPage('dungeony')">Dungeony</a></li>
+                    </ul>
+                </li>
+                <li><a onclick="toggleSubcategory('vybaveni')">Vybavení</a>
+                    <ul id="vybaveni" style="display: none;">
+                        <li><a onclick="openPage('zbrane')">Zbraně</a></li>
+                        <li><a onclick="openPage('brneni')">Brnění</a></li>
+                        <li><a onclick="openPage('sperky')">Šperky</a></li>
+                    </ul>
+                </li>
+                <li><a onclick="toggleSubcategory('ostatni')">Ostatní</a>
+                    <ul id="ostatni" style="display: none;">
+                        <li><a onclick="openPage('pasivniSchopnosti')">Pasivní schopnosti</a></li>
+                        <li><a onclick="openPage('jezdectvi')">Jezdectví</a></li>
+                        <li><a onclick="openPage('pet')">Pet</a></li>
+                        <li><a onclick="openPage('rukavice')">Rukavice</a></li>
+                        <li><a onclick="openPage('tezba')">Těžba</a></li>
+                        <li><a onclick="openPage('rybareni')">Rybaření</a></li>
+                        <li><a onclick="openPage('biolog')">Biolog</a></li>
+                        <li><a onclick="openPage('vyzvy')">Výzvy</a></li>
+                        <li><a onclick="openPage('bonusy')">Bonusy</a></li>
+                        <li><a onclick="openPage('slechteni')">Šlechtění</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <main id="content">
+            <div class="location">
+                <span class="location-name">Rukavice</span>
+            </div>
+
+            <div class="text-info">
+                <p>Na serveru Razathor jsou kostýmy nahrazeny novým předmětem - levou a pravou rukavicí. Rukavice jsou speciální předměty, do kterých můžete vložit až <span class="highlight">3 různé runy</span>, které poskytují různé <span class="highlight">bonusy</span>.</p>
+                <p>Navíc je možné přidávat nové bonusy do rukavic pomocí předmětů <span class="highlight">"Zesílit kostým" a "Začarovat kostým"</span></p>
+                <p>Pokud budete chtít později změnit runy nebo samotnou rukavici, můžete použít <span class="highlight">Runový kámen</span>, kterým lze odebrat poslední vloženou runu (<span class="highlight">50% šance!!</span>). Poté ji můžete opětovně použít a vložit do jiné rukavice.</p>
+                <p>Všechny předměty spojené s rukavicemi jsou dostupné jak v <span class="highlight">Itemshopu</span>, tak ve <span class="highlight">hře</span></p>
+              </div>
+              <div class="separator"></div>
+
+              <div class="rukavice-div">
+                <table>
+                  <tr>
+                    <th>Rukavice</th>
+                    <th>Informace o rukavici</th>
+                  </tr>
+                  <tr>
+                    <td><img src="items/modrarukaviceL.png" alt="Typ rukavice 1" class="rukavice-image"></td>
+                    <td><span class="highlights">Modrá rukavice </span>→ Rukavice přidává: <span class="highlightstext">Max ZB +500</span>, <span class="highlightstext2">Vitalita +4</span></td>
+                  </tr>
+                  <tr>
+                    <td><img src="items/cervenarukaviceL.png" alt="Typ rukavice 2" class="rukavice-image"></td>
+                    <td><span class="highlights">Červená rukavice </span>→ Rukavice přidává: <span class="highlightstext">Max ZB +500</span>, <span class="highlightstext2">Inteligence +4</span></td>
+                  </tr>
+                  <tr>
+                    <td><img src="items/zdobenarukaviceL.png" alt="Typ rukavice 3" class="rukavice-image"></td>
+                    <td><span class="highlights">Zdobená rukavice </span>→ Rukavice přidává: <span class="highlightstext">Max ZB +500</span>, <span class="highlightstext2">Síla +4</span></td>
+                  </tr>
+                  <tr>
+                    <td><img src="items/zlatarukaviceL.png" alt="Typ rukavice 4" class="rukavice-image"></td>
+                    <td><span class="highlights">Zlatá rukavice </span>→ Rukavice přidává: <span class="highlightstext">Max ZB +500</span>, <span class="highlightstext2">Pohyblivost +4</span></td>
+                  </tr>
+                  <tr>
+                    <td><img src="items/cervenarukavice+L.png" alt="Typ rukavice 5" class="rukavice-image"></td>
+                    <td><span class="highlights">Červená rukavice + </span>→ Rukavice přidává: Max <span class="highlightstext">Max ZB +1000</span>, <span class="highlightstext3">Šance na kritický zásah +8%</span></td>
+                  </tr>
+                  <tr>
+                    <td><img src="items/zdobenarukavice+L.png" alt="Typ rukavice 6" class="rukavice-image"></td>
+                    <td><span class="highlights">Zdobená rukavice + </span>→ Rukavice přidává: <span class="highlightstext">Max ZB +1000</span> , <span class="highlightstext3">Odolnost vůči monstrům +4%</span></td>
+                  </tr>
+                  <tr>
+                    <td><img src="items/modrarukavice+L.png" alt="Typ rukavice 7" class="rukavice-image"></td>
+                    <td><span class="highlights">Modrá rukavice + </span>→ Rukavice přidává: <span class="highlightstext">Max ZB +1000</span>, <span class="highlightstext3">Silný proti příšerám +6%</span></td>
+                  </tr>
+                  <tr>
+                    <td><img src="items/zlatarukavice+L.png" alt="Typ rukavice 8" class="rukavice-image"></td>
+                    <td><span class="highlights">Zlatá rukavice + </span>→ Rukavice přidává: <span class="highlightstext">Max ZB +1000</span>, <span class="highlightstext3">Silný proti pololidem +6%</span></td>
+                  </tr>
+                </table>
+              </div>
+              <div class="runa-div">
+                <table>
+                  <tr>
+                    <th>Runa</th>
+                    <th>Informace o runě</th>
+                  </tr>
+                  <tr>
+                    <td><img src="items/runazivota.png" alt="Runa života" class="runa-image"></td>
+                    <td><span class="highlights">Runa života</span> → Runa přidává: <span class="highlightstext">+500 ZB</span>, lze vložit do jakékoliv rukavice</td>
+                  </tr>
+                  <tr>
+                    <td><img src="items/runalidí.png" alt="Runa kamenů" class="runa-image"></td>
+                    <td><span class="highlights">Runa lidí</span> → Runa přidává: <span class="highlightstext">Silný proti pololidem +8%</span>, lze vložit do jakékoliv rukavice</td>
+                  </tr>
+                  <tr>
+                    <td><img src="items/runapohybu.png" alt="Runa pohybu" class="runa-image"></td>
+                    <td><span class="highlights">Runa pohybu</span> → Runa přidává: <span class="highlightstext">Rychlost pohybu +5%</span>, lze vložit do jakékoliv rukavice</td>
+                  </tr>
+                  <tr>
+                    <td><img src="items/runarychlosti.png" alt="Runa rychlosti" class="runa-image"></td>
+                    <td><span class="highlights">Runa rychlosti</span> → Runa přidává: <span class="highlightstext">Rychlost útoku +5%</span>, lze vložit do jakékoliv rukavice</td>
+                  </tr>
+                  <tr>
+                    <td><img src="items/runazkusenosti.png" alt="Runa zkušeností" class="runa-image"></td>
+                    <td><span class="highlights">Runa zkušeností</span> → Runa přidává: <span class="highlightstext">10% šance na bonus BZK</span>, lze vložit do jakékoliv rukavice</td>
+                  </tr>
+                  <tr>
+                    <td><img src="items/runapriser.png" alt="Runa příšer" class="runa-image"></td>
+                    <td><span class="highlights">Runa příšer</span> → Runa přidává: <span class="highlightstext">Silný proti příšerám +5%</span>, lze vložit do jakékoliv rukavice</td>
+                  </tr>
+                  <tr>
+                    <td><img src="items/runakamenu.png" alt="Runa kamenů" class="runa-image"></td>
+                    <td><span class="highlights">Runa kamenů</span> → Runa přidává: <span class="highlightstext">Silný proti kamenům +5%</span>, lze vložit do jakékoliv rukavice</td>
+                  </tr>
+                  <tr>
+                    <td><img src="items/runabossu.png" alt="Runa bossů" class="runa-image"></td>
+                    <td><span class="highlights">Runa bossů</span> → Runa přidává: <span class="highlightstext">Silný proti bossům +5%</span>, lze vložit do jakékoliv rukavice</td>
+                  </tr>
+                </table>
+              </div>
+              <table>
+                <tr>
+                  <th>Runový kámen</th>
+                  <th>Informace o runovém kameni</th>
+                </tr>
+                <tr>
+                  <td><img src="items/runovykamen.png" alt="Runový kámen" class="runa-image"></td>
+                  <td><span class="highlights">Runový kámen</span> → Pomocí tohoto kamene lze odebrat naposledy vloženou runu do rukavic. Existuje 50% šance, že se runa zničí.</td>
+                </tr>
+              </table>
+
+
+
+
+            
+        </main>
+    </div>
+</body>
+
+</html>

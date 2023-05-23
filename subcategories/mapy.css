@@ -1,0 +1,163 @@
+header {
+    margin-bottom: 20px;
+    text-align: center;
+    margin-left: 230px; /* Přidáváme margin-left pro posunutí záhlaví do prava */
+}
+
+.location-name {
+    font-weight: bold;
+    
+}
+
+/* Předchozí stylová pravidla */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    text-align: center;
+    flex-grow: 1;
+}
+
+footer {
+    background-color: transparent;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Ostatní styly */
+.location {
+    text-align: center;
+    margin-top: 20px;
+    color: #f8f9fa;
+    font-size: 24px;
+}
+
+.center-image {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.center-image img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.falling-items {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.falling-items p {
+    font-size: 16px;
+}
+
+.falling-items img {
+    display: inline-block;
+    margin: 5px;
+    max-width: 50px;
+    height: auto;
+}
+
+.separator {
+    border-top: 1px solid #dee2e6;
+    margin-top: 20px;
+}
+.text-info {
+    display: block;
+    font-size: 1em;
+    line-height: 3em;
+    width: 100%;
+    text-align: center;
+}
+.text-info .highlight {
+    color: red; /* Barva pro zvýrazněný text */
+    font-weight: bold;
+  }
+.image-with-text {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+.image-with-text img {
+    width: 80px; /* Přizpůsobte šířku obrázku podle potřeby */
+    margin-right: 10px
+}
+.text-info .highlights {
+    color: white; /* Barva pro zvýrazněný text */
+    font-weight: bold;
+  }
+  .jezdectvi img {
+    width: 800px; /* Přizpůsobte šířku obrázku podle potřeby */
+    margin-right: 10px
+}
+.jezdectvi {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+.peti {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .rukavice-div {
+    text-align: center;
+  }
+  .rukavice-image {
+    width: 40px;
+    height: 40px;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    
+  }
+  th, td .highlights {
+    color: white; /* Barva pro zvýrazněný text */
+    font-weight: bold;
+  }
+  th, td .highlightstext {
+    color: red; /* Barva pro zvýrazněný text */
+    font-weight: bold;
+  }
+    th, td .highlightstext2 {
+    color: lightskyblue; /* Barva pro zvýrazněný text */
+    font-weight: bold;
+  }
+  th, td .highlightstext3 {
+    color: lightgreen; /* Barva pro zvýrazněný text */
+    font-weight: bold;
+  }
+  .runa-div {
+    text-align: center;
+  }
+  
+  .runa-image {
+    width: 40px;
+    height: 40px;
+  }
+  .rybarkasaman img {
+    width: 90px;
+    height: 90px;
+  }
+
+  
