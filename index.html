@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Razathor Wiki</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="logo.png" alt="Logo serveru" id="logo" onclick="goToMainPage()">
+        <h1>Razathor Wiki</h1>
+    </header>
+
+    <div id="container">
+        <nav>
+            <ul>
+                <li><a onclick="toggleSubcategory('mapy')">Mapy</a>
+                    <ul id="mapy" style="display: none;">
+                        <li><a onclick="openPage('mapy')">Mapy</a></li>
+                        <li><a onclick="openPage('dungeony')">Dungeony</a></li>
+                       
+                    </ul>
+                </li>
+                <li><a onclick="toggleSubcategory('info')">Info</a>
+                    <ul id="info" style="display: none;">
+                        <li><a onclick="openPage('faq')">Často kladené dotazy</a></li>
+                        <li><a onclick="openPage('tipy')">Tipy & Info</a></li>
+                    </ul>
+                </li>
+                <li><a onclick="toggleSubcategory('ostatni')">Ostatní</a>
+                    <ul id="ostatni" style="display: none;">
+                        <li><a onclick="openPage('pasivniSchopnosti')">Pasivní schopnosti</a></li>
+                        <li><a onclick="openPage('jezdectvi')">Jezdectví</a></li>
+                        <li><a onclick="openPage('pet')">Pet</a></li>
+                        <li><a onclick="openPage('rukavice')">Rukavice</a></li>
+                        <li><a onclick="openPage('tezba')">Těžba</a></li>
+                        <li><a onclick="openPage('rybareni')">Rybaření</a></li>
+                        <li><a onclick="openPage('biolog')">Biolog</a></li>
+                        <li><a onclick="openPage('vyzvy')">Výzvy</a></li>
+                        <li><a onclick="openPage('bonusy')">Bonusy</a></li>
+                        <li><a onclick="openPage('slechteni')">Šlechtění</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <main id="content">
+            <div class="text-info">
+                <span class="location-name">    </span>
+            </div>
+        
+            <div class="news-block">
+                <h2>Novinky ze hry</h2>
+                <p><span class="bold-white">Údržba 24.05. 2023 02:00</span></p>
+                <p>Dnes v noci proběhla krátká technická údržba zaměřená na chod serveru bez výrazných změn ve hře.</p>
+                <ul>
+                    <li>
+                        <p>U minimapy jsme zpřístupnili tlačítko <span class="bold-green">Týdenní hodnocení</span>. Víme, že hodnocení mělo být dostupné již dříve, ale chtěli jsme celý systém předělat. Nyní tedy můžete přes tlačítko u minimapy sledovat průběžné hodnocení hráčů v aktuálním týdnu. Informace jsou zde aktualizovány každých <span class="bold-green">5 minut</span>.</p>
+                    </li>
+                    <li>
+                        <p>Navíc můžete v tomto okně rozkliknout i běžné žebříčky <span class="bold-green">hráčů</span> nebo <span class="bold-green">cechů</span> tak, jak to znáte na webu.</p>
+                    </li>
+                    <li>
+                        <p>Týdenní hodnocení je dostupné také přímo na webu v kategorii <a href="https://www.razathor.cz/ranking?weekly_players">Žebříček hráčů</a>.</p>
+                    </li>
+                    <!-- Další položky patch notes zde -->
+                </ul>
+                <div class="text-info"></div>
+            </div>
+        
+            <p class="paragraph-space"></p>
+            <p class="paragraph-space"> </p>
+            <div class="news-block">
+                <p><span class="bold-white">Údržba 20.05. 2023 02:00</span></p>
+                <p>Dnes v noci proběhla údržba serveru:</p>
+                <ul>
+                    <li>
+                        <p>Přidali jsme do hry manuální <span class="bold-green">switchbot</span>, jak bylo odhlasováno na <a href="https://discord.com/invite/JPjWT8tfQt">Discordu</a></p>
+                    </li>
+                    <li>
+                        <p>Switchbot najdete v inventáři vedle bot</p>
+                    </li>
+                    <li>
+                        <p>Switchbot lze používat na <span class="bold-green">všechny předměty z výbavy, mazlíčky, koně, účes a rukavice</span></p>
+                    </li>
+                    <li>
+                        <p>Můžete přednastavit 1-5 bonusů a tím bude automaticky hlídáno, zda byly natočeny. Pokud ano, měnič se vás zeptá, zda chcete pokračovat u další změny bonusů</p>
+                    </li>
+                    <li>
+                        <p>Ve výběru bonusů uvidíte maximální hodnotu, kterou lze natočit</p>
+                    </li>
+                    <li>
+                        <p>Vaše přednastavené sady bonusů můžete ukládat a později načíst na <span class="bold-green">jakékoliv postavě</span></p>
+                    </li>
+
+                    <p><p class="paragraph-space"></p><span class="bold-white">Změna v mapách a dungeonech od úrovně 110:</span><p></p>
+                    <li>
+                        <p><span class="bold-green">Zvýšili</span> jsme úroveň kamenů a bossů na všech mapách od úrovně <span class="bold-green">110+</span> kvůli vyrovnání dropu oproti předchozím mapám</p>
+                    </li>
+                    <li>
+                        <p>Nyní budou <span class="bold-green">kameny</span> vždy alespoň o 10 úrovní vyšší, než je přístup na mapu</p>
+                    </li>
+                    <li>
+                        <p><span class="bold-green">Bossové</span> mají také zvýšený level, ale ne tak výrazně jako kameny, aby stále byla šance bosse otrávit</p>
+                    </li>
+                </ul>
+                <div class="text-info"></div>
+            </div>
+
+
+            <div class="bottom-text">
+                <p class="paragraph-space"></p>
+                
+                <p>Neoficiální wikipedie privátního serveru <a href="https://www.razathor.cz/">Razathor.cz</a></p>
+            </div>
+
+
+
+
+
+
+
+        </main>
+
+
+        
+        
+
+       
+
+       
+</body>
+
+</html>
