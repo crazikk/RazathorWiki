@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet systém - Razathor</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="mapy.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="../logo.png" alt="Logo serveru" id="logo" onclick="goToMainPage()">
+        <h1>Mazlíčci</h1>
+    </header>
+
+    <div id="container">
+        <nav>
+            <ul>
+                <li><a onclick="toggleSubcategory('mapy')">Mapy</a>
+                    <ul id="mapy" style="display: none;">
+                        <li><a onclick="openPage('mapy')">Mapy</a></li>
+                        <li><a onclick="openPage('dungeony')">Dungeony</a></li>
+                    </ul>
+                </li>
+                <li><a onclick="toggleSubcategory('info')">Info</a>
+                    <ul id="info" style="display: none;">
+                        <li><a onclick="openPage('faq')">Často kladené dotazy</a></li>
+                        <li><a onclick="openPage('tipy')">Tipy & Info</a></li>
+                    </ul>
+                </li>
+                <li><a onclick="toggleSubcategory('ostatni')">Ostatní</a>
+                    <ul id="ostatni" style="display: none;">
+                        <li><a onclick="openPage('pasivniSchopnosti')">Pasivní schopnosti</a></li>
+                        <li><a onclick="openPage('jezdectvi')">Jezdectví</a></li>
+                        <li><a onclick="openPage('pet')">Pet</a></li>
+                        <li><a onclick="openPage('rukavice')">Rukavice</a></li>
+                        <li><a onclick="openPage('tezba')">Těžba</a></li>
+                        <li><a onclick="openPage('rybareni')">Rybaření</a></li>
+                        <li><a onclick="openPage('biolog')">Biolog</a></li>
+                        <li><a onclick="openPage('vyzvy')">Výzvy</a></li>
+                        <li><a onclick="openPage('bonusy')">Bonusy</a></li>
+                        <li><a onclick="openPage('slechteni')">Šlechtění</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <main id="content">
+            <div class="location">
+                <span class="location-name">Systém mazlíčků</span>
+            </div>
+
+            <div class="text-info">
+                <p>Vše začíná na úrovni <span class="highlight">25</span>, kdy se mezi questy každému hráči objeví nová kategorie nazvaná "<span class="highlight">Mazlíčci</span>", kde najdete pokyny pro plnění úkolů</p>
+                <p>Pro získání mazlíčka musíte nejprve porazit určitý počet bossů v různých oblastech hry. Po zabití dostatečného počtu bossů a splnění úkolu dostanete jako odměnu <span class="highlight">vajíčko</span>, ze kterého se po otevření vylíhne mazlíček. Také se aktivuje <span class="highlight">drop</span> vajec u daného bosse po splnění úkolu na něj.</p>
+                <p>Při otevření vajíčka se vylíhne základní mazlíček, jehož vzhled odpovídá jeho původu, a obdrží náhodnou sílu v rozmezí <span class="highlight">1-100</span>. Každý mazlíček má <span class="highlight">1-3 základní bonusy</span> a další <span class="highlight">1-2 bonusy</span>, které se odvíjí od jeho síly.</p>
+                <p>Další vlastností mazlíčka je, že čím je <span class="highlight">starší</span>, tím více se vyvíjí jeho vzhled a poskytuje <span class="highlight">lepší bonusy</span>. Každý mazlíček má 3 úrovně vývoje, které se zvyšují po určité době od otevření vajíčka.</p>
+                <p>Čas potřebný pro další úroveň se pohybuje mezi <span class="highlight">5-30 dny</span> a závisí na síle mazlíčka. Například mazlíček se silou <span class="highlight">100 potřebuje 30 dní</span> pro další úroveň a může být na maximální úrovni <span class="highlight">(3)</span> vylepšen až po 60 dnech. Mazlíček se silou <span class="highlight">1</span> však potřebuje pouze <span class="highlight">5 dní</span> pro další úroveň.</p>
+                <p>Vylepšení mazlíčka na další úroveň můžete provést v <span class="highlight">Hlavním městě u Krotitele mazlíčků</span>, který za každé vylepšení požaduje <span class="highlight">poplatek</span>. Každé vylepšení změní vzhled mazlíčka a v konečné fázi vždy představuje bosse, kterého jste na začátku lovili.</p>
+              </div>
+              <div class="separator"></div>
+              <div class="text-info">
+                <div class="peti">
+                  <img src="items/questymazlicku.png" alt="Obrázek 1">
+                  <p><span class="highlights"> Úkoly na získání vejce mazlíčků </p>
+                </div>
+                <div class="peti">
+                    <img src="items/kraldemonu1.png" alt="Obrázek 1">
+                    <p><span class="highlights"> Pečeť Krále démonů se sílou 2 </p>
+                  </div>
+                  <div class="peti">
+                    <img src="items/kraldemonu2.png" alt="Obrázek 1">
+                    <p><span class="highlights">                Pečeť Krále démonů se sílou 96 </p>
+                  </div>
+
+
+
+
+
+              
+
+
+
+
+            
+        </main>
+    </div>
+</body>
+
+</html>

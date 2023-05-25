@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>faq - Razathor</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="mapy.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="../logo.png" alt="Logo serveru" id="logo" onclick="goToMainPage()">
+        <h1>FAQ</h1>
+    </header>
+
+    <div id="container">
+        <nav>
+            <ul>
+                <li><a onclick="toggleSubcategory('mapy')">Mapy</a>
+                    <ul id="mapy" style="display: none;">
+                        <li><a onclick="openPage('mapy')">Mapy</a></li>
+                        <li><a onclick="openPage('dungeony')">Dungeony</a></li>
+                    </ul>
+                </li>
+                <li><a onclick="toggleSubcategory('info')">Info</a>
+                    <ul id="info" style="display: none;">
+                        <li><a onclick="openPage('faq')">Často kladené dotazy</a></li>
+                        <li><a onclick="openPage('tipy')">Tipy & Info</a></li>
+                    </ul>
+                </li>
+                <li><a onclick="toggleSubcategory('ostatni')">Ostatní</a>
+                    <ul id="ostatni" style="display: none;">
+                        <li><a onclick="openPage('pasivniSchopnosti')">Pasivní schopnosti</a></li>
+                        <li><a onclick="openPage('jezdectvi')">Jezdectví</a></li>
+                        <li><a onclick="openPage('pet')">Pet</a></li>
+                        <li><a onclick="openPage('rukavice')">Rukavice</a></li>
+                        <li><a onclick="openPage('tezba')">Těžba</a></li>
+                        <li><a onclick="openPage('rybareni')">Rybaření</a></li>
+                        <li><a onclick="openPage('biolog')">Biolog</a></li>
+                        <li><a onclick="openPage('vyzvy')">Výzvy</a></li>
+                        <li><a onclick="openPage('bonusy')">Bonusy</a></li>
+                        <li><a onclick="openPage('slechteni')">Šlechtění</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <main id="content">
+            <div class="location">
+                <span class="location-name">Často kladené dotazy</span>
+            </div>
+            <p> ‎ </p>
+            <div class="text-info">
+                <p><span class="whighlights">Kde dropnu zbraně od úrovně 30?</span></p>
+                <p><span class="highlightss">Zbraně lze zakoupit u Obchodníka se zbraněmi za 2,5 milionu yangů nebo klasicky dropnout z brutálních příšer v druhých městech </span></p>
+                <p> ‎ </p>
+
+                <p><span class="whighlights">Kde expit od úrovně 75?</span></p>
+                <p><span class="highlightss">Od úrovně 75 do 80 je nejlepší expit v jeskyni vyhnanství 2 , pro nejrychlejší exp z úrovně 80 do 95 je doporočována Věž ďáblů </span></p>
+                <p> ‎ </p>
+                <p><span class="whighlights">Zmizel mi patcher po aktualizaci / jentak, co mám dělat ?</span></p>
+                <p><span class="highlightss"> Váš antivirus vyhodnotil patcher hry jako potencionální malware, pro vyřešení tohoto problému doporučujeme dát složku se hrou do vyjimek vašeho antiviru. Jak dát soubor / složku do vyjimek pro tyto antiviry naleznete zde: <a href="https://www.youtube.com/watch?v=BonLkFNnO9w">Defender (Win10)</a> ,<a href="https://www.youtube.com/watch?v=j2XGZCLL-Is">Defender (Win11)</a> ,<a href="https://www.youtube.com/watch?v=niCZG4vI7Lo">AVG Antivirus</a> , <a href="https://www.youtube.com/watch?v=9NbfmhJAiDs">ESET</a> , <a href="https://www.youtube.com/watch?v=a_1eEyfuwvs">Avast</a> , <a href="https://www.youtube.com/watch?v=E2VA62rYTag">Kaspersky Security</a>   </span></p>
+                <p> ‎ </p>
+                <p><span class="whighlights">Kde získám automatické elixíry?</span></p>
+                <p><span class="highlightss">Automatické elixíry padají z šutrů úrovně 85 a výše (konkrétně na menší úrovni nejlépe v Červeném lese) </span></p>
+              </div>
+              <div class="separator"></div>
+              
+
+
+
+
+
+              
+
+
+
+
+            
+        </main>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Výzvy - Razathor</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="mapy.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="../logo.png" alt="Logo serveru" id="logo" onclick="goToMainPage()">
+        <h1>Výzvy</h1>
+    </header>
+
+    <div id="container">
+        <nav>
+            <ul>
+                <li><a onclick="toggleSubcategory('mapy')">Mapy</a>
+                    <ul id="mapy" style="display: none;">
+                        <li><a onclick="openPage('mapy')">Mapy</a></li>
+                        <li><a onclick="openPage('dungeony')">Dungeony</a></li>
+                    </ul>
+                </li>
+                <li><a onclick="toggleSubcategory('info')">Info</a>
+                    <ul id="info" style="display: none;">
+                        <li><a onclick="openPage('faq')">Často kladené dotazy</a></li>
+                        <li><a onclick="openPage('tipy')">Tipy & Info</a></li>
+                    </ul>
+                </li>
+                <li><a onclick="toggleSubcategory('ostatni')">Ostatní</a>
+                    <ul id="ostatni" style="display: none;">
+                        <li><a onclick="openPage('pasivniSchopnosti')">Pasivní schopnosti</a></li>
+                        <li><a onclick="openPage('jezdectvi')">Jezdectví</a></li>
+                        <li><a onclick="openPage('pet')">Pet</a></li>
+                        <li><a onclick="openPage('rukavice')">Rukavice</a></li>
+                        <li><a onclick="openPage('tezba')">Těžba</a></li>
+                        <li><a onclick="openPage('rybareni')">Rybaření</a></li>
+                        <li><a onclick="openPage('biolog')">Biolog</a></li>
+                        <li><a onclick="openPage('vyzvy')">Výzvy</a></li>
+                        <li><a onclick="openPage('bonusy')">Bonusy</a></li>
+                        <li><a onclick="openPage('slechteni')">Šlechtění</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <main id="content">
+            <div class="location">
+                <span class="location-name">Výzvy</span>
+            </div>
+
+            <div class="text-info">
+                <p>Výzvy jsou <span class="highlight">hlavní</span> formou <span class="highlight">questů</span> a budou se Vám plnit <span class="highlight">automaticky</span> během vašeho hraní. Najdou se zde výzvy pro všechny aspekty hry (ať už jde o aktivní <span class="highlight">dropování</span>, <span class="highlight">rybaření</span>, nebo <span class="highlight">PvP</span>). Za každou splněnou výzvu obdržíte <span class="highlight">odměnu</span></p>
+                <p>Najdou se zde <span class="highlight">odměny</span>, které Vám cíleně pomůžou do začátku, jako například první schopnost na <span class="highlight">G1</span> po zabití <span class="highlight">8000</span> příšer. Taková výzva se dá zvládnout za prvních několik , aby první G1 schopnost nebyla pro nikoho <span class="highlight">problém</span>.                </p>
+                <p>Je však zřejmé, že za celou řadu výzev hráči obdrží spíše <span class="highlight">symbolické</span> odměny, aby se předcházelo pokusům o <span class="highlight">podvádění</span> s vytvářením spousty postav. Vše musí mít své rozumné meze a takto velké odměny jsou spíše výjimkou, kterou obdržíte až po nějakém větším <span class="highlight">milníku</span></p>
+                <p> <span class="highlights">Níže jsou uvedeny věškeré výzvy s odměnami do úrovně 100<p>
+            </div>
+              <div class="separator"></div>
+              <div class="text-info">
+                <div class="vyzvy">
+                  <img src="items/vyzvy1.png" alt="Obrázek 1">
+                  <p><span class="highlights">  Výzva příšer #1   -> 55x Kniha dle vlastního výběru  </p>
+                    <p><span class="highlights">  Výzva příšer #5   -> Modrá rukavice P  (Přidává VIT +4 a 500 ZB)  </p>
+                </div>
+                <div class="text-info">
+                    <div class="vyzvy">
+                      <img src="items/vyzvy2.png" alt="Obrázek 1">
+                      <p><span class="highlights"> Výzva kamenů #4 -> Kámen nestvůr +5  & Kámen smrt. rány +5</p>
+                      <p><span class="highlights"> Výzva kamenů #5 -> 2x Runa života  (+500ZB) </p>
+                    </div>
+                    <div class="text-info">
+                        <div class="vyzvy">
+                          <img src="items/vyzvy3.png" alt="Obrázek 1">
+                          <p><span class="highlights">  Výzva kamenů #6 -> 10x Požehnaný pergamen (10%)</p>
+                            <p><span class="highlights">  Výzva kamenů #7 -> Modrá rukavice + L (+1000ZB & Silný proti příšerám +8%)  Runa života, Runa pohybu (rychlost pohybu +5%)</p>
+                        </div>
+              
+           
+
+            
+
+
+
+
+
+              
+
+
+
+
+            
+        </main>
+    </div>
+</body>
+
+</html>

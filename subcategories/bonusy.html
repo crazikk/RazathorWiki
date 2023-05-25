@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonusy - Razathor</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="bonusy.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="../logo.png" alt="Logo serveru" id="logo" onclick="goToMainPage()">
+        <h1>Nové bonusy</h1>
+    </header>
+
+    <div id="container">
+        <nav>
+            <ul>
+                <li><a onclick="toggleSubcategory('mapy')">Mapy</a>
+                    <ul id="mapy" style="display: none;">
+                        <li><a onclick="openPage('mapy')">Mapy</a></li>
+                        <li><a onclick="openPage('dungeony')">Dungeony</a></li>
+                    </ul>
+                </li>
+                <li><a onclick="toggleSubcategory('info')">Info</a>
+                    <ul id="info" style="display: none;">
+                        <li><a onclick="openPage('faq')">Často kladené dotazy</a></li>
+                        <li><a onclick="openPage('tipy')">Tipy & Info</a></li>
+                    </ul>
+                </li>
+                <li><a onclick="toggleSubcategory('ostatni')">Ostatní</a>
+                    <ul id="ostatni" style="display: none;">
+                        <li><a onclick="openPage('pasivniSchopnosti')">Pasivní schopnosti</a></li>
+                        <li><a onclick="openPage('jezdectvi')">Jezdectví</a></li>
+                        <li><a onclick="openPage('pet')">Pet</a></li>
+                        <li><a onclick="openPage('rukavice')">Rukavice</a></li>
+                        <li><a onclick="openPage('tezba')">Těžba</a></li>
+                        <li><a onclick="openPage('rybareni')">Rybaření</a></li>
+                        <li><a onclick="openPage('biolog')">Biolog</a></li>
+                        <li><a onclick="openPage('vyzvy')">Výzvy</a></li>
+                        <li><a onclick="openPage('bonusy')">Bonusy</a></li>
+                        <li><a onclick="openPage('slechteni')">Šlechtění</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <main id="content">
+            <div class="location">
+                <span class="location-name">Nové bonusy</span>
+            </div>
+
+            <div class="text-info">
+                <p>Cílem je hráčům předat nový herní zážitek a přispět k vyšší rozmanitosti hry. Proto je zde spousta nových bonusů, které v kombinaci s těmi známými vytváří zcela nové možnosti.</p>
+                <p> <span class="highlights">Níže jsou uvedeny věškeré nové bonusy<p>
+            </div>
+              <div class="separator"></div>
+              <table class="new-bonus-table">
+                <thead>
+                    <tr>
+                        <th>Název bonusu</th>
+                        <th>Výskyt</th>
+                        <th>Popis bonusu</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td>Silný proti kamenům</td>
+                        <td>Obrázek koně, bonusy v předmětech</td>
+                        <td>Zvyšuje způsobené poškození při ničení kamenů.</td>
+                    </tr>
+                    <tr>
+                        <td>Silný proti bossům</td>
+                        <td>Mazlíčci, bonusy v předmětech</td>
+                        <td>Zvyšuje způsobené poškození při boji s bossem.</td>
+                    </tr>
+                    <tr>
+                        <td>Šance na brutální zásah</td>
+                        <td>Předmět u obchodnice, bonusy v předmětech, mazlíčci</td>
+                        <td>V případě brutálního zásahu je útok 4x silnější. Je možné zasáhnout brutálně a kriticky zároveň, což způsobí 8x silnější útok. Tento bonus je počítán na desetiny procent a vyskytuje se ve velmi malých číslech. Tento bonus neplatí na schopnosti.</td>
+                    </tr>
+                    <tr>
+                        <td>Šance na přímé poškození</td>
+                        <td>Bonusy v předmětech</td>
+                        <td>Zásah ignoruje všechny obrany soupeře.</td>
+                    </tr>
+                    <tr>
+                        <td>Umění s mečem</td>
+                        <td>Vložené bonusy v rukavicích</td>
+                        <td>Pokud mám nasazený meč, tento bonus vyruší protivníkovu <span>Obranu proti mečům</span> o daný počet procent.</td>
+                    </tr>
+                    <tr>
+                        <td>Umění s obouručním mečem</td>
+                        <td>Vložené bonusy v rukavicích</td>
+                        <td>Pokud mám nasazený obouruční meč, tento bonus vyruší protivníkovu <span>Obranu proti obouručním mečům</span> o daný počet procent.</td>
+                    </tr>
+                    <tr>
+                        <td>Umění s dýkou</td>
+                        <td>Vložené bonusy v rukavicích</td>
+                        <td>Pokud mám nasazenou dýku, tento bonus vyruší protivníkovu <span>Obranu proti dýkám</span> o daný počet procent.</td>
+                    </tr>
+                    <tr>
+                        <td>Umění s lukem</td>
+                        <td>Vložené bonusy v rukavicích</td>
+                        <td>Pokud mám nasazený luk, tento bonus vyruší protivníkovu <span>Obranu proti šípům</span> o daný počet procent.</td>
+                    </tr>
+                    <tr>
+                        <td>Umění se zvonem</td>
+                        <td>Vložené bonusy v rukavicích</td>
+                        <td>Pokud mám nasazený zvon, tento bonus vyruší protivníkovu <span>Obranu proti zvonům</span> o daný počet procent.</td>
+                    </tr>
+                    <tr>
+                        <td>Umění s vějířem</td>
+                        <td>Vložené bonusy v rukavicích</td>
+                        <td>Pokud mám nasazený vějíř, tento bonus vyruší protivníkovu <span>Obranu proti vějířům</span> o daný počet procent.</td>
+                    </tr>
+                    <tr>
+                        <td>Odolnost vůči zvířatům</td>
+                        <td>Mazlíčci</td>
+                        <td>Snižuje poškození od příšer, které mají označení zvířata.</td>
+                    </tr>
+                    <tr>
+                        <td>Odolnost vůči orkům</td>
+                        <td>Mazlíčci</td>
+                        <td>Snižuje poškození od příšer, které mají označení orci.</td>
+                    </tr>
+                    <tr>
+                        <td>Odolnost vůči ezoterikům</td>
+                        <td>Mazlíčci</td>
+                        <td>Snižuje poškození od příšer, které mají označení ezoterik.</td>
+                    </tr>
+                    <tr>
+                        <td>Odolnost vůči nemrtvým</td>
+                        <td>Mazlíčci</td>
+                        <td>Snižuje poškození od příšer, které mají označení nemrtvý.</td>
+                    </tr>
+                    <tr>
+                        <td>Odolnost vůči ďáblu</td>
+                        <td>Mazlíčci</td>
+                        <td>Snižuje poškození od příšer, které mají označení ďábel.</td>
+                    </tr>
+
+
+                </tbody>
+            </table>
+
+              
+           
+
+            
+
+
+
+
+
+              
+
+
+
+
+            
+        </main>
+    </div>
+</body>
+
+</html>

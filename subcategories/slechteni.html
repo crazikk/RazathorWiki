@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rybaření - Razathor</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="mapy.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="../logo.png" alt="Logo serveru" id="logo" onclick="goToMainPage()">
+        <h1>Těžba</h1>
+    </header>
+
+    <div id="container">
+        <nav>
+            <ul>
+                <li><a onclick="toggleSubcategory('mapy')">Mapy</a>
+                    <ul id="mapy" style="display: none;">
+                        <li><a onclick="openPage('mapy')">Mapy</a></li>
+                        <li><a onclick="openPage('dungeony')">Dungeony</a></li>
+                    </ul>
+                </li>
+                <li><a onclick="toggleSubcategory('info')">Info</a>
+                    <ul id="info" style="display: none;">
+                        <li><a onclick="openPage('faq')">Často kladené dotazy</a></li>
+                        <li><a onclick="openPage('tipy')">Tipy & Info</a></li>
+                    </ul>
+                </li>
+                <li><a onclick="toggleSubcategory('ostatni')">Ostatní</a>
+                    <ul id="ostatni" style="display: none;">
+                        <li><a onclick="openPage('pasivniSchopnosti')">Pasivní schopnosti</a></li>
+                        <li><a onclick="openPage('jezdectvi')">Jezdectví</a></li>
+                        <li><a onclick="openPage('pet')">Pet</a></li>
+                        <li><a onclick="openPage('rukavice')">Rukavice</a></li>
+                        <li><a onclick="openPage('tezba')">Těžba</a></li>
+                        <li><a onclick="openPage('rybareni')">Rybaření</a></li>
+                        <li><a onclick="openPage('biolog')">Biolog</a></li>
+                        <li><a onclick="openPage('vyzvy')">Výzvy</a></li>
+                        <li><a onclick="openPage('bonusy')">Bonusy</a></li>
+                        <li><a onclick="openPage('slechteni')">Šlechtění</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <main id="content">
+            <div class="location">
+                <span class="location-name">Těžba</span>
+            </div>
+
+            <div class="text-info">
+                <p>Šlechtění je nový způsob, jak lze vylepšit jakýkoliv předmět z výbavy. Ať už od úrovně <span class="highlight">10</span>, nebo <span class="highlight">120</span>. Všechny předměty lze šlechtit až na <span class="highlight">stupeň 10</span>.</p>
+                <p>Vyšlechtěný předmět je označen barevnou značkou u ikony a přidává <span class="highlight">+2%</span> ke všem základním bonusům za každý stupeň a <span class="highlight">+1%</span> ke všem vloženým bonusům za každý stupeň.
+                    Maximálně vyšlechtěný předmět tedy přidává +20% k základním a +10% k přidaným bonusům</p>
+                <p><span class="highlights">Jak vyšlechtit předmět?</span></p>
+                <p>Předměty se šlechtí u <span class="highlight">Druida</span>, kterého hráč najde v Hlavním městě. Když hráč přinese Druidovi 2 stejné předměty (stejné +), může je za poplatek vyšlechtit. Šance na úspěšné šlechtění se snižuje s aktuálním stupněm šlechtění. Na začátku je šance na zlepšení 90% a postupně se snižuje až na 30%.
+                    Cena šlechtění se odvíjí od levelu, který předmět potřebuje</p>
+                <p>Pokud hráč navíc vyšlechtí zbraň nebo brnění, uvidí na postavě specifický efekt podle úrovně šlechtění</p>
+                <p><span class="highlight">Na co si hráč musí dát pozor?</span> </p>
+                <p>Při kování předmětu šlechtění zmizí!             </p>
+            </div>
+              <div class="separator"></div>
+
+              <div class="text-info">
+                <div class="slechteni">
+                  <img src="items/slechteni.png" alt="Obrázek 1">
+                  <p><span class="highlights"> Okno se šlechtěním </p>
+                </div>
+              
+              
+           
+
+            
+
+
+
+
+
+              
+
+
+
+
+            
+        </main>
+    </div>
+</body>
+
+</html>
